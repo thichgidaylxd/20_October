@@ -18,7 +18,7 @@ public class controller {
     }
 
     @PostMapping
-    public ResponseEntity<entity> post(@RequestBody entity entity){
-        return ResponseEntity.ok(ser.create(entity));
+    public ResponseEntity<Integer> post(@RequestBody entity entity){
+        return ResponseEntity.ok(ser.create(entity).getId());
     }
 }

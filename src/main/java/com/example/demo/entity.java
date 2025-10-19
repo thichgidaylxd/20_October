@@ -11,11 +11,11 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class entity {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    public class entity {
+        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+        Integer id;
 
-    String noiDung;
-    String tenNguoiGui;
-    String tenNguoiNhan;
-}
+        String noiDung;
+        String tenNguoiGui;
+        String tenNguoiNhan;
+    }
