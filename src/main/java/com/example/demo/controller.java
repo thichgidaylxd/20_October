@@ -21,4 +21,9 @@ public class controller {
     public ResponseEntity<Integer> post(@RequestBody entity entity){
         return ResponseEntity.ok(ser.create(entity).getId());
     }
+
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
+    }
 }
